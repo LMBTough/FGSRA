@@ -25,9 +25,9 @@ def compute_integrated_gradient(batch_x, batch_blank, model, idx):
     return integrated_gradients
 
 
-class IGAttack(Attack):
+class MIG(Attack):
     def __init__(self, model, eps=8/255, alpha=2/255, steps=10,decay=1.0, model_learning_rate=0.0001,train_steps=[0,2,4,6,8]):
-        super().__init__("IGAttack", model)
+        super().__init__("MIG", model)
         self.eps = eps
         self.alpha = alpha
         if steps == 0:

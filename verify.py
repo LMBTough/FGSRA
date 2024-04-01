@@ -7,7 +7,7 @@ from attacks.tifgsm import TIFGSM
 from attacks.mifgsm import MIFGSM
 from attacks.sinifgsm import SINIFGSM
 from attacks.gra import GRA
-from attacks.igattack import IGAttack
+from attacks.mig import IGAttack
 from attacks.fsps import FSPS
 from attacks.bim2 import BIMFX,BIMDBAORI,BIMDBAFX
 from attacks.bim3 import BIM3
